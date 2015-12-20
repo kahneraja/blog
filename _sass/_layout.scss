@@ -165,6 +165,7 @@
  * Page content
  */
 .page-content {
+
 }
 
 .page-heading {
@@ -179,7 +180,7 @@
         position: relative;
         float: left;
         box-shadow: 6px 6px 6px $grey-color-light;
-        margin: 10px;
+        margin: 5px;
     }
 }
 
@@ -238,7 +239,6 @@
     margin-top: 20px;
     font-size: 42px;
     letter-spacing: -1px;
-    line-height: 1;
 
     @include media-query($on-tablet) {
         font-size: 36px;

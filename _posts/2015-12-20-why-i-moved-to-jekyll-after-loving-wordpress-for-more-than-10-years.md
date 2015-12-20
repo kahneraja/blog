@@ -10,6 +10,10 @@ feature: "jekyll.jpg"
 
 I've been writing on wordpress now for over 10 years and I've finally decided to get cool and move to jekyll. Here's why.
 
+## Page load time.
+
+Precompilation means the page lots a lot faster.
+
 ## I'm a Developer. I like flexibility. I like Markdown.
 
 The experience of publishing with wordpress is more suitable for journalists, content writers, basically anyone who doesn't enjoy code.
@@ -24,11 +28,9 @@ AWS running my site on an EC2 server was costing me approx $40/month.
 
 > "Why pay computer power for a blog?"
 
-## What? You have a database?
-
-Yeh. Mysql and PHP just freaks me out.
-
 ## No computation, No Database.
+
+Mysql and PHP just freaks me out.
 
 > "Server side rendering has basically been pushed out of the way."
 

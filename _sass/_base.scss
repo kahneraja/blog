@@ -175,6 +175,7 @@ pre {
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
+    display: inline-block;
 
     @include media-query($on-tablet) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -184,7 +185,10 @@ pre {
     }
 }
 
-
+.right-panel{
+    display: inline-block;
+    vertical-align: top;
+}
 
 /**
  * Clearfix

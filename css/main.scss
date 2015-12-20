@@ -10,6 +10,8 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$padding-unit:	5px;
+
 $spacing-unit:     30px;
 
 $text-color:       #444444;
@@ -24,6 +26,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    950px;
 $on-mobile:        600px;
 $on-tablet:        950px;
+
+$outer-max-width:	900px;
+$left-max-width:	600px;
+$right-max-width:	300px;
+
+$scollbar-width: 	50px;
 
 // Use media queries like this:
 // @include media-query($on-mobile) {
@@ -42,5 +50,9 @@ $on-tablet:        950px;
 @import
         "base",
         "layout",
+        "home-panel",
+        "outer-panel",
+        "left-panel",
+        "right-panel",
         "syntax-highlighting"
 ;

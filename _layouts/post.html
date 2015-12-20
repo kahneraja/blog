@@ -9,20 +9,11 @@ layout: default
   		<span class="caption">{{ page.caption }}</span>
   	</div>
   	<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
+  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
 </article>
-<div class="right-column">
-  Hi, I'm Kahne. 
-
-  I work with awesome people at Readify, Australia's best IT Consultancy. I make things happen with technology. 
-
-  I'm a violinist in various classical music ensembles. 
-
-  I paint and sell original artwork @ArtKahne
-</div>
