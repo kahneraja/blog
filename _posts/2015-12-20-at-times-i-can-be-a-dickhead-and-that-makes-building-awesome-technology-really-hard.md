@@ -2,7 +2,7 @@
 layout: post
 title: At times I can be a dickhead, and that makes building awesome technology really hard.
 published: True
-feature: /assets/post/heart.jpg
+feature: heart.jpg
 
 ---
 

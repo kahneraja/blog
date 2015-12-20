@@ -3,7 +3,7 @@ layout: post
 title:  "Why I moved to Jekyll after loving Wordpress for more than 10 years."
 date:   2015-12-20 14:48:04 +1100
 categories: jekyll update
-feature: "/assets/post/jekyll.jpg"
+feature: "jekyll.jpg"
 ---
 
 > "Whenever a client wants to do something really tricky my default is to try to figure out if we can service their needs with a static html website. It never works but it's still fun to try."
