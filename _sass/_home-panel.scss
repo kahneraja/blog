@@ -1,44 +1,84 @@
 .home-panel {
-    margin-left: 0;
-    list-style: none;
+    max-width: $left-max-width - $padding-unit * 2;
+    display: inline-block;
+    padding: $padding-unit;
+
+    @include media-query($outer-max-width + $scollbar-width) {
+        max-width: none;
+    }   
+
+    ul {
+        margin-left: $padding-unit;
+    }
 
     li {
         display: inline-block;
         box-shadow: 6px 6px 6px $grey-color-light;
         margin: $padding-unit;
         list-style-type: none;
+        vertical-align: top;
+        background-color: $grey-color-light;
 
-
-        div {
-            position: absolute;
-            bottom: 0;
-            background-color: black;
-            opacity: 0.7;
-            color: white;
-            padding: $padding-unit * 2;
-
-            @include media-query($outer-max-width + $scollbar-width) {
-                position: static;
-            }              
-        }    
-
-        img{
-            width: 300px - $padding-unit * 4;
-            height: 300px - $padding-unit * 4;
-
-            @include media-query($outer-max-width + $scollbar-width) {
-                width: 100%;
-                height: auto;        
-                max-width: none;
-                padding: $padding-unit * 3;
-            }                 
+        a:hover {
+            text-decoration: none;
         }
 
         @include media-query($outer-max-width + $scollbar-width) {
-            display: block;
-        }            
+            width: 95%;
+            margin-bottom: $padding-unit * 4;
+        }         
 
+        div.thumbnail{
+            @include media-query($outer-max-width + $scollbar-width) {
+                display: inline-block;
+                padding: 0;
+            }
 
-    }  
+            @include media-query($outer-max-width + $scollbar-width) {
+                float: left;
+                display: block;
+            }               
+
+            img{
+                width: $tile-width - $padding-unit * 4;
+                height: $tile-width - $padding-unit * 4;  
+
+                @include media-query($outer-max-width + $scollbar-width) {
+                    width: $tile-width / 2;
+                    height: $tile-width / 2;
+                }   
+            }
+        }
+
+        div.title {
+            position: absolute;
+            margin-top: -1 * $tile-width + $tile-width / 2 + $padding-unit * 4;
+            width: $tile-width - $padding-unit * 4;
+            height: $tile-width / 2 - $padding-unit * 4;
+            overflow: hidden;
+            background-color: black;
+            opacity: 0.7;
+            color: white;
+            vertical-align: top;
+
+        
+
+            @include media-query($outer-max-width + $scollbar-width) {
+                width: auto;
+                height: auto;
+                position: static;
+                margin-top: 0;
+                display: block;
+                height: $tile-width / 2;
+                overflow: hidden;
+            }  
+
+            span {
+                padding: $padding-unit * 2;
+                display: block;
+                text-decoration: none;
+            }
+        }    
+    }
 
 }

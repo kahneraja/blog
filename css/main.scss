@@ -31,6 +31,8 @@ $outer-max-width:	900px;
 $left-max-width:	600px;
 $right-max-width:	300px;
 
+$tile-width:        300px;
+
 $scollbar-width: 	50px;
 
 // Use media queries like this:
@@ -54,5 +56,6 @@ $scollbar-width: 	50px;
         "outer-panel",
         "left-panel",
         "right-panel",
+        "about-panel",
         "syntax-highlighting"
 ;
